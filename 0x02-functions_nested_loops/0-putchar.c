@@ -1,8 +1,9 @@
 #include "main.h"
 /**
  * main - Entry point
+ * is written by mbah
  * Description : 'prints _putchar to stdoubt'
- * Return : always 0
+ * Return : always 0 (Success)
  */
 int main(void)
 {
@@ -14,6 +15,5 @@ int main(void)
 	_putchar('h');
 	_putchar('a');
 	_putchar('r');
-	_putchar('\n');
 	return (0);
 }
