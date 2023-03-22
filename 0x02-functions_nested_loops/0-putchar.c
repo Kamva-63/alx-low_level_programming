@@ -3,7 +3,7 @@
  * main - Entry point
  * is written by mbah
  * Description : 'prints _putchar to stdoubt'
- * Return : always 0 (Success)
+ * Return : always 0
  */
 int main(void)
 {
