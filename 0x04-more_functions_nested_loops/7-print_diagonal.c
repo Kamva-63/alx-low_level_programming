@@ -6,8 +6,8 @@
  * Returns: empty
  */
 void print_diagonal(int n)
-{
 
+{
 	int x, y;
 
 	if (n <= 0)
@@ -23,6 +23,7 @@ else
 			_putchar(32);
 		}
 		_putchar(92);
-		_putchar('\n);}
+		_putchar('\n');
+	}
 }
 }
