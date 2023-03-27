@@ -25,6 +25,7 @@ int _atoi(char *s)
 			isi = 1;
 			ni = (ni * 10) +  (s[c] - '0');
 			c++;
+		}
 			if (isi == 1)
 			{
 				break;
@@ -33,4 +34,4 @@ int _atoi(char *s)
 		}
 		ni *= min;
 		return (ni);
-	}
+}
