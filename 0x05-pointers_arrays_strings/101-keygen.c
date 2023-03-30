@@ -1,19 +1,24 @@
-#include "main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- * _strcpy - copy a string
- * @dest: Destination value
- * @src: Source value
- * Return: The pointer to dest
+ * main - generates keygen.
+ * Return: 0 Always.
  */
-
-char *_strcpy(char *dest, char *src)
+int main(void)
 {
-	int i;
-	for (i = 0; src[i] != '\0'; i++)
+	int r = 0, c = 0;
+	time_t t;
+
+	srand((unsigned int) time(&t));
+	while (c < 2772)
 	{
-		dest[i] = src[i];
+		r = rand() % 128;
+		if ((c + r) > 2772)
+			break;
+		c = c + r;
+		printf("%c", r);
 	}
-	dest[i++] = '\0'; 
-	return (dest);
+	printf("%c\n", (2772 - c));
+	return (0);
 }
